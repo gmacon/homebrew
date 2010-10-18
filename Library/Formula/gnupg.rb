@@ -23,8 +23,7 @@ class Gnupg <Formula
     end
 
     system "./configure", "--disable-dependency-tracking",
-                          "--prefix=#{prefix}",
-                          "--disable-asm"
+                          "--prefix=#{prefix}"
     system "make"
     system "make check"
 
